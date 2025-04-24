@@ -1,0 +1,68 @@
+{
+  "Contact_users": [
+    {
+      "id": "893d",
+      "userName": "nidhi",
+      "email": "hello@gmail.com",
+      "message": "hello how are you???",
+      "mobile": "0875254523"
+    },
+    {
+      "id": "d118",
+      "userName": "nidhi",
+      "email": "hello@gmail.com",
+      "message": "hello",
+      "mobile": "9428937596"
+    },
+    {
+      "id": "c3fb",
+      "userName": "nidhi",
+      "mobile": "08752579031",
+      "email": "hello@gmail.com",
+      "message": "hbngltkewsxcvhyo6p[54321q"
+    },
+    {
+      "id": "e542",
+      "userName": "nidhi",
+      "mobile": "9428937596",
+      "email": "hello@gmail.com",
+      "message": "jhgfty7u8i9o0p[]';lkjhg"
+    },
+    {
+      "id": "2177",
+      "userName": "guddy",
+      "mobile": "8734838561",
+      "email": "hello@gmail.com",
+      "message": "hello ..... How are you????"
+    }
+  ],
+  "PersonalDetails_data": [
+    {
+      "id": "4ed8"
+    },
+    {
+      "id": "fb2f",
+      "firstName": "fggr",
+      "lastName": "jhjhbj",
+      "email": "bb@mail.com",
+      "mobile": "3291",
+      "address": "hjbjb",
+      "address2": "njknjkj",
+      "city": "mehsana",
+      "pinCode": "384002",
+      "state": "nknkn"
+    },
+    {
+      "id": "7643",
+      "firstName": "nidhi",
+      "lastName": "patel",
+      "email": "hello@gmail.com",
+      "mobile": "08752579031",
+      "address": "mehsana",
+      "address2": "mehsana-2",
+      "city": "mehsana",
+      "pinCode": "384002",
+      "state": "gujarat"
+    }
+  ]
+}

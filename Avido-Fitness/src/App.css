@@ -1,0 +1,1044 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-color: rgb(15, 15, 15);
+}
+.bi-plus,
+.bi-check2,
+.bi-chat-right-dots {
+  color: #e52026;
+}
+/* Navbar CSS start */
+.main {
+  background-color: black;
+}
+.btn-navbar {
+  background-color: #e52026;
+}
+.dropdown-menu{
+  --bs-dropdown-link-active-bg: #e52026;
+}
+/* Navbar CSS end */
+
+/* Home-page CSS start*/
+.banner-title {
+  font-size: 45px;
+}
+.banner-img {
+  position: relative;
+  height: 700px;
+  padding: 0;
+}
+.banner-hero-img {
+  width: 100%;
+  height: 100%;
+}
+.banner-text {
+  width: 50%;
+  text-align: justify;
+  position: absolute;
+}
+.hero-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.btn1 {
+  background-color: #e52026;
+}
+.btn2 {
+  background-color: black;
+}
+
+.about-sublitle {
+  font-size: 20px;
+  color: #e52026;
+}
+.about-title {
+  font-size: 40px;
+}
+.about-description {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: lighter;
+}
+.about-bgImg {
+  background-color: #e52026;
+  height: fit-content;
+}
+.about-bgText > p {
+  font-size: 35px;
+}
+.about-img-box {
+  height: 500px;
+  width: 28%;
+}
+.about-box-img {
+  height: 100%;
+  width: 100%;
+}
+
+.service-title {
+  font-size: 40px;
+}
+.service-description {
+  font-size: 14px;
+  text-align: justify;
+}
+.service-img-group {
+  position: relative;
+}
+.service-img-box {
+  height: 550px;
+  width: 32%;
+  position: relative;
+  padding: 0;
+}
+.service-img1-box {
+  height: 470px;
+  width: 32%;
+  position: relative;
+  padding: 0;
+}
+.service-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.service-inner-text {
+  width: 90%;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 14px;
+  text-align: justify;
+}
+.service-btn1 {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: fit-content;
+  background-color: #e52026;
+}
+
+.services-title {
+  font-size: 40px;
+  margin: auto;
+}
+.services-description {
+  font-size: 14px;
+  margin: auto;
+}
+.services-part {
+  background-color: rgb(49, 49, 49);
+  border-radius: 10px;
+  width: 32%;
+  height: fit-content;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.services-service-text {
+  position: relative;
+}
+.services-service-title {
+  font-size: 23px;
+}
+.services-box {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  border-radius: 5px;
+  background-color: #e52026;
+}
+.services-btn1 {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: fit-content;
+  background-color: #e52026;
+}
+.learn-text {
+  font-size: 18px;
+  text-decoration: none;
+  color: #e52026;
+}
+.learn-text > a {
+  text-decoration: none;
+  color: #e52026;
+}
+
+.why-us-title {
+  font-size: 45px;
+}
+.us-title {
+  font-size: 22px;
+}
+.us-text1 > p {
+  font-size: 15px;
+  text-align: justify;
+}
+.us-img-box {
+  width: 32%;
+  height: 525px;
+  padding: 0;
+}
+.us-img1-box {
+  width: 32%;
+  height: 600px;
+  padding: 0;
+}
+.us-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.membership-part {
+  text-align: justify;
+  width: 32%;
+  background-color: rgb(49, 49, 49);
+  border-radius: 10px;
+}
+.membership-title {
+  font-size: 40px;
+  margin: auto;
+}
+.membership-description {
+  font-size: 14px;
+  margin: auto;
+}
+.membership-membership-text {
+  width: 90%;
+}
+.membership-membership-title {
+  font-size: 30px;
+}
+.membership-price {
+  font-size: 35px;
+  color: #e52026;
+}
+.membership-list {
+  font-size: 14px;
+}
+.member-btn {
+  width: 100%;
+  border-radius: 40px;
+  background-color: #e52026;
+  color: white;
+}
+
+.card {
+  background-color: black;
+}
+.card-img-top {
+  height: 350px;
+  border-radius: 5px;
+}
+.card-body {
+  color: white;
+  text-align: justify;
+}
+.blog-title {
+  font-size: 40px;
+}
+.blog-card-title {
+  font-size: 21px;
+}
+.blog-card-text {
+  font-size: 16px;
+}
+.blog-btn {
+  color: white;
+}
+
+.footer {
+  color: white;
+  /* background-color: rgb(49, 49, 49); */
+}
+.footer-title {
+  font-size: 30px;
+}
+.footer-subscribe {
+  font-size: 22px;
+}
+.footer-input {
+  position: relative;
+}
+.footer-input-text {
+  background-color: rgb(117, 117, 117);
+  width: 98%;
+  border: 0;
+}
+.right-arrow {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+.line {
+  color: white;
+}
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-icon-list {
+  list-style-type: none;
+}
+.footer-list-text {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+/* Home-page CSS end*/
+
+/* AboutUs-page CSS start*/
+.aboutUs-banner-text {
+  list-style-type: none;
+}
+.aboutUs-banner-name {
+  text-decoration: none;
+  color: white;
+}
+.aboutUs-banner-list {
+  font-size: 14px;
+}
+.aboutUs-banner-title {
+  font-size: 50px;
+}
+.aboutUs-story-title {
+  font-size: 38px;
+}
+.aboutUs-story-description {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.aboutUs-vision-Mission {
+  height: fit-content;
+}
+.aboutUs-vision-text {
+  width: 90%;
+}
+.aboutUs-vision-Mission-title {
+  font-size: 35px;
+}
+.aboutUs-vision-Mission-description {
+  font-size: 17px;
+  text-align: justify;
+}
+.aboutUs-vision-Mission-box {
+  height: 430px;
+  width: 49%;
+  padding: 0;
+}
+.aboutUs-vision-Mission-box-img {
+  height: 100%;
+  width: 100%;
+}
+
+.aboutUs-project {
+  position: relative;
+}
+.aboutUs-project-box {
+  height: 600px;
+  padding: 0;
+}
+.aboutUs-project-img {
+  height: 100%;
+  width: 100%;
+}
+.aboutUs-project-text-box {
+  width: 80%;
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: -50px;
+  left: 140px;
+}
+.aboutUs-related-title {
+  font-size: 40px;
+}
+.aboutUs-related-box {
+  height: 350px;
+  width: 32%;
+  padding: 0;
+}
+.aboutUs-related-box1 {
+  height: 400px;
+  width: 23%;
+  padding: 0;
+}
+.aboutUs-related-img {
+  height: 100%;
+  width: 100%;
+}
+
+.aboutUs-review {
+  background-color: rgb(15, 15, 15);
+}
+.aboutUs-reviews {
+  width: 30%;
+}
+.about-review-title {
+  font-size: 40px;
+}
+.aboutUs-title > p {
+  font-size: 30px;
+}
+.aboutUs-reviews-text {
+  font-size: 18px;
+  text-align: justify;
+}
+.aboutUs-profile > p {
+  font-size: 20px;
+}
+.aboutUs-profile-box {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.bi-quote {
+  color: gray;
+}
+/* AboutUs-page CSS end*/
+
+/* services-page css start */
+.services-banner-text {
+  list-style-type: none;
+}
+.services-banner-name {
+  text-decoration: none;
+  color: white;
+}
+.services-banner-list {
+  font-size: 14px;
+}
+.services-banner-title {
+  font-size: 50px;
+}
+.services-banner-training-name {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.services-training-title {
+  font-size: 40px;
+}
+.services-training-description {
+  font-size: 16px;
+}
+.services-training-list-text {
+  text-align: justify;
+  font-size: 16px;
+}
+.services-training-list {
+  height: 400px;
+  padding: 0;
+  border-radius: 10px;
+}
+.services-training-img {
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+}
+.services-service-title {
+  font-size: 40px;
+  margin: auto;
+}
+.services-service-description {
+  font-size: 14px;
+  margin: auto;
+}
+.services-service-part {
+  background-color: rgb(49, 49, 49);
+  border-radius: 10px;
+  width: 32%;
+  height: fit-content;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.services-service-service-text {
+  position: relative;
+}
+.services-service-service-title {
+  font-size: 22px;
+}
+.services-service-box {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -50px;
+  left: -30px;
+  border-radius: 5px;
+  background-color: #e52026;
+}
+.services-service-btn1 {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: fit-content;
+  background-color: #e52026;
+}
+.learn-text {
+  font-size: 18px;
+}
+/* services-service-page css end */
+
+/* pricing-page css start */
+.pricing-banner-text {
+  list-style-type: none;
+}
+.pricing-banner-name {
+  text-decoration: none;
+  color: white;
+}
+.pricing-banner-list {
+  font-size: 14px;
+}
+.pricing-banner-title {
+  font-size: 50px;
+}
+.pricing-story-title {
+  font-size: 30px;
+}
+.pricing-story-box {
+  height: 350px;
+  padding: 0;
+}
+.pricing-story-img {
+  height: 100%;
+  width: 100%;
+}
+.pricing-story-description {
+  font-size: 16px;
+  text-align: justify;
+}
+.offer-Img {
+  height: 500px;
+  width: 100%;
+}
+.pricing {
+  position: relative;
+}
+.pricing-offer-text {
+  position: absolute;
+  top: 180px;
+  left: 100px;
+}
+.pricing-offer-title {
+  font-size: 35px;
+}
+.pricing-offer-description {
+  font-size: 18px;
+}
+.btn-offer {
+  background-color: black;
+  color: white;
+}
+.pricing-subscription-text {
+  width: 75%;
+}
+.pricing-subscription-title {
+  font-size: 40px;
+}
+
+.pricing-subscription-description {
+  font-size: 18px;
+}
+.pricing-subscription-list-text {
+  font-size: 18px;
+}
+.pricing-subscription-list {
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.btn-pricing-subscription{
+  background-color: #e52026;
+  color: white;
+}
+/* pricing-page css end */
+
+/* sign css start */
+.signIn-box {
+  height: fit-content;
+}
+.signIn-title {
+  font-size: 45px;
+}
+.signIn-text > a {
+  text-decoration: none;
+  color: #e52026;
+}
+.signIn-option {
+  width: 100%;
+}
+.signIn-text1 > a {
+  text-decoration: none;
+  color: white;
+}
+.sign-btn {
+  width: 100%;
+  background-color: #e52026;
+  color: white;
+}
+/* sign css end */
+
+/* blog-page css end */
+.blog-banner-text {
+  list-style-type: none;
+}
+.blog-banner-name {
+  text-decoration: none;
+  color: white;
+}
+.blog-banner-list {
+  font-size: 14px;
+}
+.blog-banner-title {
+  font-size: 50px;
+}
+/* blog-page css end */
+
+/* contact-page css start */
+.contact-banner-text {
+  list-style-type: none;
+}
+.contact-banner-name {
+  text-decoration: none;
+  color: white;
+}
+.contact-banner-list {
+  font-size: 14px;
+}
+.contact-banner-title {
+  font-size: 50px;
+}
+
+.contact-details {
+  width: 32%;
+}
+.contact-details-title {
+  font-size: 25px;
+}
+
+.contact-form {
+  width: 75%;
+}
+.contact-form-title {
+  font-size: 35px;
+}
+.contact-form-btn {
+  background-color: #e52026;
+}
+.contact-follow-box {
+  width: 33%;
+  height: 350px;
+  padding: 0;
+}
+.contact-follow-box1 {
+  width: 24%;
+  height: 300px;
+  padding: 0;
+}
+.follow-img {
+  height: 100%;
+  width: 100%;
+}
+.contact-follow-text {
+  font-size: 50px;
+}
+/* contact-page css end */
+
+/* blog-details-page css start */
+.blog-details-box {
+  height: 500px;
+  width: 100%;
+}
+.blog-details-img {
+  height: 100%;
+  width: 100%;
+}
+.blog-details-title-text {
+  font-size: 30px;
+}
+.blog-details-description-text {
+  font-size: 20px;
+  text-align: justify;
+}
+.blog-details-list {
+  font-size: 15px;
+  text-align: justify;
+}
+.blog-related-blog-title {
+  font-size: 40px;
+}
+/* blog-details-page css end */
+
+/* select-membership-page css start */
+.select-membership-title {
+  font-size: 40px;
+}
+.select-membership-offer {
+  width: 24%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.select-membership-offer:hover {
+  transform: translateY(-5px);
+  border-radius: 10px;
+}
+.select-membership-list {
+  list-style-type: none;
+  padding: 0;
+}
+.select-membership-list-text {
+  font-size: 18px;
+}
+.select-membership-list-price {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+.membership-input-text-title {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.membership-input-text-total {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+.membershipDetails-btn {
+  width: fit-content;
+  height: fit-content;
+  background-color: #e52026;
+  color: white;
+}
+/*select-membership-page css end */
+
+/*personalDetails-page css start */
+.personalDetails-title {
+  font-size: 40px;
+}
+.personalDetails-text {
+  font-size: 20px;
+}
+.personalDetails-btn {
+  background-color: #e52026;
+  color: white;
+}
+/*personalDetails-page css end */
+
+/*payment-page css start */
+.payment-text-back {
+  text-decoration: none;
+  color: white;
+}
+.payment-title {
+  font-size: 20px;
+}
+.card-no {
+  position: relative;
+}
+.payment-icon {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  color: black;
+}
+.payment-btn {
+  width: 100%;
+  background-color: #e52026;
+  color: white;
+}
+/*payment-page css end */
+
+/*payment-page css end */
+.paymentSuccessful-title {
+  font-size: 35px;
+}
+.paymentSuccessful-box {
+  height: 200px;
+  width: 200px;
+}
+.paymentSuccessful-img {
+  height: 100%;
+  width: 100%;
+}
+.paymentSuccessful-text {
+  font-size: 20px;
+}
+/*payment-page css end */
+
+/*inner-services-page css start */
+.inner-Services-banner-list {
+  list-style-type: none;
+  font-size: 14px;
+}
+.inner-Services-banner-name {
+  text-decoration: none;
+  color: white;
+}
+.inner-Services-banner-title {
+  font-size: 40px;
+}
+.inner-services-service-img {
+  height: 400px;
+  width: 100%;
+}
+.inner-services-service-title1 {
+  font-size: 20px;
+}
+.inner-services-service-description {
+  font-size: 14px;
+  text-align: justify;
+}
+.inner-services-service-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 15px;
+}
+.icon-right {
+  color: #e52026;
+}
+.inner-Services-service-box {
+  height: 300px;
+  width: 48%;
+  padding: 0;
+}
+.inner-services-service-img1 {
+  height: 100%;
+  width: 100%;
+}
+.inner-services-service-box2 {
+  height: 250px;
+  width: 100%;
+  padding: 0;
+}
+.inner-services-service-img2 {
+  height: 100%;
+  width: 100%;
+}
+.other-services-title {
+  font-size: 40px;
+}
+
+.other-services-text-title{
+  font-size: 20px;
+}
+.other-services-text-description{
+  font-size: 14px;
+  text-align: justify;
+}
+.other-services-text-box{
+  height: 180px;
+}
+.inner-services-otherRelated-service {
+  font-size: 40px;
+}
+.inner-services-otherRelated-service-box {
+  height: 350px;
+  width: 100%;
+}
+.inner-services-otherRelated-service-img {
+  height: 100%;
+  width: 100%;
+}
+.inner-services-otherRelated-service-title {
+  font-size: 25px;
+}
+.inner-services-otherRelated-service-description {
+  font-size: 16px;
+  text-align: justify;
+}
+/*inner-services-page css end */
+
+/*whyUs page css end */
+.whyUs-banner-text {
+  list-style-type: none;
+}
+.whyUs-banner-name {
+  text-decoration: none;
+  color: white;
+}
+.whyUs-banner-list {
+  font-size: 14px;
+}
+.whyUs-banner-title {
+  font-size: 50px;
+}
+
+.whyUs-story {
+  height: 300px;
+  width: 32%;
+}
+.whyUs-story-title {
+  font-size: 40px;
+}
+.whyUs-story-text-title {
+  font-size: 25px;
+}
+.whyUs-story-text-description {
+  font-size: 16px;
+  text-align: justify;
+}
+.whyUs-advantages-box {
+  height: 680px;
+  width: 50%;
+  padding: 0;
+}
+.whyUs-advantages-img {
+  height: 100%;
+  width: 100%;
+}
+.whyUs-advantages {
+  background-color: black;
+}
+.whyUs-advantages-title {
+  font-size: 40px;
+}
+.ads-box {
+  height: fit-content;
+  font-size: 20px;
+}
+.ads-text-title {
+  font-size: 25px;
+}
+.ads-text-description {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.whyUs-section-title {
+  font-size: 40px;
+}
+.whyUs-section-box {
+  height: 330px;
+  width: 100%;
+}
+.whyUs-section-img {
+  height: 100%;
+  width: 100%;
+}
+.whyUs-section-text-title {
+  font-size: 28px;
+}
+.whyUs-section-text-description {
+  font-size: 16px;
+}
+.whyUs-section-text {
+  text-align: justify;
+}
+/*whyUs page css end */
+
+/*FAQ page css start */
+.FAQ-banner-text {
+  list-style-type: none;
+}
+.FAQ-banner-name {
+  text-decoration: none;
+  color: white;
+}
+.FAQ-banner-list {
+  font-size: 14px;
+}
+.FAQ-banner-title {
+  font-size: 50px;
+}
+
+.FAQ-form {
+  width: 100%;
+}
+.btn-FAQ {
+  width: fit-content;
+  background-color: #e52026;
+  color: white;
+}
+.FAQ-question-title {
+  font-size: 25px;
+}
+.accordion-header > button {
+  background-color: rgb(72, 72, 72);
+  color: white;
+}
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+.accordion-button:not(.collapsed) {
+  color: white;
+}
+.accordion-button:not(.collapsed) {
+  background-color: rgb(73, 73, 73);
+}
+.FAQ-contact-title {
+  font-size: 40px;
+}
+.FAQ-contact-text {
+  font-size: 16px;
+}
+.contact-faq-btn {
+  background-color: #e52026;
+}
+/*FAQ page css end */
+
+/*terms-condition css start */
+.terms-conditions-section{
+  box-shadow: rgba(67, 67, 67, 0.25) 0px 50px 100px -20px, rgba(67, 67, 67, 0.25) 0px 30px 60px -30px, rgba(67, 67, 67, 0.25) 0px -2px 6px 0px inset;
+}
+.terms-conditions-text {
+  box-sizing: border-box;
+  background-color: #121212;
+}
+.terms-conditions-heading {
+    font-size: 40px;
+  }
+  .terms-conditions-content{
+    text-align: justify;
+  }
+.button {
+      background-color: #e52026;
+      box-shadow: 0rem 0.5rem 1rem -0.125rem rgba(0, 0, 0, 0.25);
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.25s, box-shadow 0.25s;
+}
+/*terms-condition css end */
+
+/*privacyPolicy css start */
+.privacyPolicy-section{
+  box-shadow: rgba(67, 67, 67, 0.25) 0px 50px 100px -20px, rgba(67, 67, 67, 0.25) 0px 30px 60px -30px, rgba(67, 67, 67, 0.25) 0px -2px 6px 0px inset;
+}
+.privacyPolicy-text {
+  box-sizing: border-box;
+  background-color: #121212;
+}
+.privacyPolicy-heading {
+  font-size: 45px;
+}
+.privacyPolicy-content{
+  text-align: justify;
+}
+.privacyPolicy-content-text{
+  font-size: 25px;
+}
+.privacyPolicy-content-text-text{
+  font-size: 15px;
+}
+
+/*privacyPolicy css end */
