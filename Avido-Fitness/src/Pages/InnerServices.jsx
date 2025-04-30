@@ -6,6 +6,18 @@ import RelatedImg3 from "../assets/relatedImg3.png";
 import InnerServices1 from "../assets/inner-services1.png";
 import InnerServices2 from "../assets/inner-services2.png";
 import InnerServices3 from "../assets/inner-services3.png";
+import SpecialServices1 from "../assets/OtherServicesimg1.jpg";
+import SpecialServices2 from "../assets/OtherServicesimg2.jpg";
+import SpecialServices3 from "../assets/OtherServicesimg3.jpg";
+import SpecialServices4 from "../assets/OtherServicesimg4.jpg";
+import SpecialServices5 from "../assets/OtherServicesimg5.jpg";
+import SpecialServices6 from "../assets/OtherServicesimg6.jpg";
+import SpecialServices7 from "../assets/OtherServicesimg7.jpg";
+import InnerRelatedServices1 from "../assets/innerRelatedimg1.jpg";
+import InnerRelatedServices2 from "../assets/innerRelatedimg2.jpg";
+import InnerRelatedServices3 from "../assets/innerRelatedimg3.jpg";
+
+
 
 function InnerServices() {
   return (
@@ -224,7 +236,7 @@ function InnerServices() {
                     </div>
                   </div>
                   <div className="col-4 other-services-text-box bg-light">
-                    <img src="" alt="" />
+                    <img className="other-services-text-img" src={SpecialServices1} alt="" />
                   </div>
                 </div>
                 <div className="row my-3 p-2">
@@ -247,7 +259,7 @@ function InnerServices() {
                     </div>
                   </div>
                   <div className="col-4 other-services-text-box bg-light">
-                    <img src="" alt="" />
+                    <img className="other-services-text-img" src={SpecialServices2} alt="" />
                   </div>
                 </div>
                 <div className="row my-3 p-2">
@@ -270,7 +282,7 @@ function InnerServices() {
                     </div>
                   </div>
                   <div className="col-4 other-services-text-box bg-light">
-                    <img src="" alt="" />
+                    <img className="other-services-text-img" src={SpecialServices3} alt="" />
                   </div>
                 </div>
                 <div className="row my-3 p-2">
@@ -294,7 +306,7 @@ function InnerServices() {
                     </div>
                   </div>
                   <div className="col-4 other-services-text-box bg-light">
-                    <img src="" alt="" />
+                    <img className="other-services-text-img" src={SpecialServices4} alt="" />
                   </div>
                 </div>
                 <div className="row my-3 p-2">
@@ -318,7 +330,7 @@ function InnerServices() {
                     </div>
                   </div>
                   <div className="col-4 other-services-text-box bg-light">
-                    <img src="" alt="" />
+                    <img className="other-services-text-img" src={SpecialServices5} alt="" />
                   </div>
                 </div>
                 <div className="row my-3 p-2">
@@ -342,7 +354,7 @@ function InnerServices() {
                     </div>
                   </div>
                   <div className="col-4 other-services-text-box bg-light">
-                    <img src="" alt="" />
+                    <img className="other-services-text-img" src={SpecialServices6} alt="" />
                   </div>
                 </div>
                 <div className="row my-3 p-2">
@@ -365,7 +377,7 @@ function InnerServices() {
                     </div>
                   </div>
                   <div className="col-4 other-services-text-box bg-light">
-                    <img src="" alt="" />
+                    <img className="other-services-text-img" src={SpecialServices7} alt="" />
                   </div>
                 </div>
               </div>
@@ -384,7 +396,7 @@ function InnerServices() {
               <div className="inner-services-otherRelated-service-box bg-dark">
                 <img
                   className="inner-services-otherRelated-service-img"
-                  src=""
+                  src={InnerRelatedServices1}
                   alt=""
                 />
               </div>
@@ -410,7 +422,7 @@ function InnerServices() {
               <div className="inner-services-otherRelated-service-box bg-dark">
                 <img
                   className="inner-services-otherRelated-service-img"
-                  src=""
+                  src={InnerRelatedServices2}
                   alt=""
                 />
               </div>
@@ -436,7 +448,7 @@ function InnerServices() {
               <div className="inner-services-otherRelated-service-box bg-dark">
                 <img
                   className="inner-services-otherRelated-service-img"
-                  src=""
+                  src={InnerRelatedServices3}
                   alt=""
                 />
               </div>

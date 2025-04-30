@@ -46,7 +46,7 @@ function AboutUs() {
       {/* about Us-stroy start*/}
       <div className="container-fluid px-5">
         <div className="row">
-          <div className="col-8 m-auto text-center">
+          <div className="col-7 m-auto text-center">
             <p className="aboutUs-story-title">Our story</p>
             <p className="aboutUs-story-description">
               “We Don't Just Train Bodies — We Fuel Ambition.” <br /> At Avido

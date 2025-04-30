@@ -23,6 +23,7 @@ import Details from "./Pages/Details";
 import { Protect } from "@clerk/clerk-react";
 import TermsConditions from "./Pages/TermsConditions";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import Gallery from "./Pages/Gallery";
 // import Abc from "./Pages/Abc";
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/terms&Conditions" element={<TermsConditions />} />
         <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/gallery" element={<Gallery />} />
         {/* <Route path="/abc" element={<Abc />} /> */}
       </Routes>
       <Footer />

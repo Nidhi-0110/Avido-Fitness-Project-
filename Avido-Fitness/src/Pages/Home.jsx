@@ -42,7 +42,7 @@ function Home() {
               </button>
               <button
                 type="button"
-                className="btn btn-outline-secondary btn2 me-3 my-3 text-light px-4 py-2">
+                className="btn btn-outline-secondary btn2 me-3 my-3 text-light px-4 py-2" onClick={()=> navigate("/gallery")}>
                 Gallery
               </button>
             </div>
@@ -53,7 +53,7 @@ function Home() {
         {/* about section Start */}
         <div className="container-fluid my-5 px-5">
           <div className="row about">
-            <div className="col-8 m-auto text-center about-text">
+            <div className="col-7 m-auto text-center about-text">
               <p className="about-sublitle">ABOUT US</p>
               <p className="about-title">
                 "More than a gym — we’re your second home for fitness, growth,
