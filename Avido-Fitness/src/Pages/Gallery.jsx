@@ -30,6 +30,13 @@ import GalleryImg27 from "../assets/galleryImg27.jpg";
 import GalleryImg28 from "../assets/galleryImg28.jpg";
 import GalleryImg29 from "../assets/galleryImg29.jpg";
 import GalleryImg30 from "../assets/galleryImg30.jpg";
+import Certificate1 from "../assets/certificate1.jpg";
+import Certificate2 from "../assets/certificate2.jpg";
+import Certificate3 from "../assets/certificate3.jpg";
+import Certificate4 from "../assets/certificate4.jpg";
+import Certificate5 from "../assets/certificate5.jpg";
+import Certificate6 from "../assets/certificate6.jpg";
+import Certificate7 from "../assets/certificate7.jpg";
 
 function Gallery() {
   return (
@@ -120,22 +127,22 @@ function Gallery() {
             <div className="col-4 gallery-box">
               <div className="row">
                 <div className="col-12">
-                  <img className="gallery-box-img1" src={GalleryImg13}  alt="" />
+                  <img className="gallery-box-img1" src={GalleryImg13} alt="" />
                 </div>
                 <div className="col-12 mt-5">
-                  <img className="gallery-box-img1" src={GalleryImg14}  alt="" />
+                  <img className="gallery-box-img1" src={GalleryImg14} alt="" />
                 </div>
               </div>
             </div>
             <div className="col-4 gallery-box">
               <div className="row">
                 <div className="col-12">
-                  <img className="gallery-box-img1" src={GalleryImg15}  alt="" />
+                  <img className="gallery-box-img1" src={GalleryImg15} alt="" />
                 </div>
               </div>
               <div className="row">
                 <div className="col-12 my-5">
-                  <img className="gallery-box-img1" src={GalleryImg16}  alt="" />
+                  <img className="gallery-box-img1" src={GalleryImg16} alt="" />
                 </div>
               </div>
             </div>
@@ -143,7 +150,7 @@ function Gallery() {
             <div className="col-4 gallery-box1">
               <div className="row ">
                 <div className="col-12">
-                  <img className="gallery-box-img2" src={GalleryImg1}  alt="" />
+                  <img className="gallery-box-img2" src={GalleryImg1} alt="" />
                 </div>
               </div>
             </div>
@@ -240,29 +247,45 @@ function Gallery() {
           </div>
           <div className="row d-flex justify-content-between px-2">
             <div className="col-3 gallery-certification-box">
-              <img className="gallery-certification-img" src="" alt="" />
+              <img
+                className="gallery-certification-img"
+                src={Certificate1}
+                alt=""
+              />
             </div>
             <div className="col-3 gallery-certification-box">
-              <img className="gallery-certification-img" src="" alt="" />
+              <img
+                className="gallery-certification-img"
+                src={Certificate2}
+                alt=""
+              />
             </div>
             <div className="col-3 gallery-certification-box">
-              <img className="gallery-certification-img" src="" alt="" />
+              <img
+                className="gallery-certification-img"
+                src={Certificate3}
+                alt=""
+              />
             </div>
             <div className="col-3 gallery-certification-box">
-              <img className="gallery-certification-img" src="" alt="" />
+              <img
+                className="gallery-certification-img"
+                src={Certificate4}
+                alt=""
+              />
             </div>
             <div className="row d-flex justify-content-between px-2 mt-4">
               <div className="col-1"></div>
-            <div className="col-3 gallery-certification-box">
-              <img className="gallery-certification-img" src="" alt="" />
-            </div>
-            <div className="col-3 gallery-certification-box">
-              <img className="gallery-certification-img" src="" alt="" />
-            </div>
-            <div className="col-3 gallery-certification-box">
-              <img className="gallery-certification-img" src="" alt="" />
-            </div>
-            <div className="col-1"></div>
+              <div className="col-3 gallery-certification-box">
+                <img className="gallery-certification-img" src={Certificate5} alt="" />
+              </div>
+              <div className="col-3 gallery-certification-box">
+                <img className="gallery-certification-img" src={Certificate6} alt="" />
+              </div>
+              <div className="col-3 gallery-certification-box">
+                <img className="gallery-certification-img" src={Certificate7} alt="" />
+              </div>
+              <div className="col-1"></div>
             </div>
           </div>
         </div>
