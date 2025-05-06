@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { postPersonalDetails } from "../server";
-import { useUser } from "@clerk/clerk-react";
+import { useLocation } from "react-router-dom";
+// import { useUser } from "@clerk/clerk-react";
 
 function PersonalDetails() {
   const navigate = useNavigate();
-  const { isSignedIn } = useUser();
-
+  const location = useLocation();
+  const { membershipData } = location.state || {}; // Destructure membershipData from location.state
   const [detailsData, setDetailsData] = useState({
     firstName: "",
     lastName: "",
@@ -27,7 +28,6 @@ function PersonalDetails() {
   }
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log(detailsData);
     await postPersonalDetails(detailsData);
     setDetailsData({
       firstName: "",
@@ -46,10 +46,10 @@ function PersonalDetails() {
     });
     alert("Your replay sent");
   }
-  if (!isSignedIn) {
-    console.log("hii");
-    return <h1>Please Signin...</h1>;
-  }
+  // if (!isSignedIn) {
+  //   console.log("hii");
+  //   return <h1>Please Signin...</h1>;
+  // }
   return (
     <>
       <div className="main px-5 text-light">
@@ -75,7 +75,7 @@ function PersonalDetails() {
                       aria-label="First name"
                       name="firstName"
                       value={detailsData.firstName}
-                      onChange={handleChange}
+                      onChange={handleChange} required
                     />
                   </div>
                   <div className="col-6 my-3">
@@ -89,7 +89,7 @@ function PersonalDetails() {
                       aria-label="Last name"
                       name="lastName"
                       value={detailsData.lastName}
-                      onChange={handleChange}
+                      onChange={handleChange} required
                     />
                   </div>
                   <div className="col-12 my-3">
@@ -103,7 +103,7 @@ function PersonalDetails() {
                       placeholder="Email"
                       name="email"
                       value={detailsData.email}
-                      onChange={handleChange}
+                      onChange={handleChange} required
                     />
                   </div>
                   <div className="col-12 my-3">
@@ -117,7 +117,7 @@ function PersonalDetails() {
                       placeholder="Phone No."
                       name="mobile"
                       value={detailsData.mobile}
-                      onChange={handleChange}
+                      onChange={handleChange} required
                     />
                   </div>
                   <div className="col-12 my-3">
@@ -131,7 +131,7 @@ function PersonalDetails() {
                       placeholder="1234 Main St"
                       name="address"
                       value={detailsData.address}
-                      onChange={handleChange}
+                      onChange={handleChange} required
                     />
                   </div>
                   <div className="col-12 my-3">
@@ -145,7 +145,7 @@ function PersonalDetails() {
                       placeholder="Apartment, studio, or floor"
                       name="address2"
                       value={detailsData.address2}
-                      onChange={handleChange}
+                      onChange={handleChange} required
                     />
                   </div>
                   <div className="col-6 my-3">
@@ -159,7 +159,7 @@ function PersonalDetails() {
                       placeholder="City"
                       name="city"
                       value={detailsData.city}
-                      onChange={handleChange}
+                      onChange={handleChange} required
                     />
                   </div>
                   <div className="col-6 my-3">
@@ -173,7 +173,7 @@ function PersonalDetails() {
                       placeholder="Pin code"
                       name="pinCode"
                       value={detailsData.pinCode}
-                      onChange={handleChange}
+                      onChange={handleChange} required
                     />
                   </div>
                   <div className="col-12 my-3">
@@ -187,7 +187,7 @@ function PersonalDetails() {
                       placeholder="State"
                       name="state"
                       value={detailsData.state}
-                      onChange={handleChange}
+                      onChange={handleChange} required
                     />
                   </div>
                   <div className="col-12">
@@ -201,7 +201,7 @@ function PersonalDetails() {
                       <button
                         type="submit"
                         className="btn personalDetails-btn px-4 py-2 ms-2 rounded-0 btn-lg"
-                        onClick={() => navigate("/payment")}>
+                        onClick={() => navigate("/payment", {state:{membershipData}})}>
                         Continue
                       </button>
                     </div>

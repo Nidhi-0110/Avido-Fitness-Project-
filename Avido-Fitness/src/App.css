@@ -746,6 +746,11 @@
 /*personalDetails-page css end */
 
 /*payment-page css start */
+.payment-box-logo{
+  height: 50px;
+  width: 50px;
+  background-color: aliceblue;
+}
 .payment-text-back {
   text-decoration: none;
   color: white;

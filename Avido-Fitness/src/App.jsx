@@ -18,12 +18,12 @@ import PaymentSuccessful from "./Pages/PaymentSuccessful";
 import WhyUs from "./Pages/WhyUs";
 import FAQ from "./Pages/FAQ";
 import InnerServices from "./Pages/InnerServices";
-import Data from "./Pages/data";
+import Data from "./Pages/Data";
 import Details from "./Pages/Details";
-import { Protect } from "@clerk/clerk-react";
 import TermsConditions from "./Pages/TermsConditions";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Gallery from "./Pages/Gallery";
+import PaymentData from "./Pages/PaymentData";
 // import Abc from "./Pages/Abc";
 
 function App() {
@@ -44,14 +44,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} /> */}
         <Route path="/blogDetails" element={<BlogDetails />} />
         <Route path="/membershipDetails" element={<MembershipDetails />} />
-        <Route
-          path="/personalDetails"
-          element={
-            <Protect>
-              <PersonalDetails />
-            </Protect>
-          }
-        />
+        <Route path="/personalDetails" element={<PersonalDetails />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/paymentSuccessful" element={<PaymentSuccessful />} />
         <Route path="/data" element={<Data />} />
@@ -59,6 +52,7 @@ function App() {
         <Route path="/terms&Conditions" element={<TermsConditions />} />
         <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/paymentData" element={<PaymentData />} />
         {/* <Route path="/abc" element={<Abc />} /> */}
       </Routes>
       <Footer />

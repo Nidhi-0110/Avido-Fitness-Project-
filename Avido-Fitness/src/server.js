@@ -2,6 +2,7 @@ import axios from "axios";
 
 const CONTACT_API = "http://localhost:3000/Contact_users";
 const PERSONAL_DETAILS_API = "http://localhost:3000/PersonalDetails_data";
+const PAYMENT_API = "http://localhost:3000/Payment_data";
 
 const getContactUser = async () => {
   try {
@@ -37,9 +38,30 @@ const postPersonalDetails = async (obj) => {
   }
 };
 
+
+const getPaymentData = async () => {
+  try {
+    const response = await axios.get(PAYMENT_API);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+const postPaymentData = async (obj) => {
+  try {
+    await axios.post(PAYMENT_API, obj);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
 export {
   getContactUser,
   postContactUser,
   postPersonalDetails,
   getPersonalDetails,
+  getPaymentData,
+  postPaymentData
 };

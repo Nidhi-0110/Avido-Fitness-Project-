@@ -39,7 +39,7 @@ const MembershipDetailsData = [
     id: "7",
     month: "3 Months !",
     days: "92",
-    price: "170",
+    price: "$170",
   },
   {
     id: "8",

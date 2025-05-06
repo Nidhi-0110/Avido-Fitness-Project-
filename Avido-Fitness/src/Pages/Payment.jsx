@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { postPaymentData } from "../server";
 
 function Payment() {
   const navigate = useNavigate();
+  const location = useLocation(); 
+  const { membershipData } = location.state || {} // Destructure membershipData from location.state
+  const membershipPrice = membershipData?.price 
+
+  const [paymentData, setPaymentData] = useState({
+    cardNumber: "",
+    expiryDate: "",
+    cvv: "",
+    cardName: "",
+  });
+
+  function handleChange(e) {
+    setPaymentData((prevVal) => ({
+      ...prevVal,
+      [e.target.name]: e.target.value,
+    }));
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    console.log(paymentData);
+    await postPaymentData(paymentData);
+    setPaymentData({
+      cardNumber: "",
+      expiryDate: "",
+      cvv: "",
+      cardName: "",
+    });
+    alert("Your payment is successful");
+  }
+
+
   return (
     <>
       <div className="main text-light px-5">
@@ -10,10 +44,10 @@ function Payment() {
           <div className="row">
             <div className="col-4 p-2 bg-dark">
               <div className="logo d-flex">
-                <div className="box bg-dark">
+                <div className="payment-box-logo m-2">
                   <img src="" alt="" />
                 </div>
-                <p>Avido Fitness</p>
+                <p className="my-3 mx-2">Avido Fitness</p>
               </div>
               <div
                 className="accordion accordion-flush"
@@ -36,7 +70,7 @@ function Payment() {
                     data-bs-parent="#accordionFlushExample">
                     <div className="accordion-body d-flex justify-content-between ">
                       <p>Sub Total</p>
-                      <p> ......</p>
+                      <p>{membershipPrice}</p>
                     </div>
                   </div>
                 </div>
@@ -58,7 +92,7 @@ function Payment() {
                 Cards (Debit / Credit)
               </p>
               <div className="payment-box bg-dark px-5 py-3 mb-5 mx-2">
-                <form action="">
+                <form action="" onSubmit={handleSubmit}>
                   <div className="col-12 card-no my-3">
                     <label for="inputText" className="form-label">
                       Card No.
@@ -67,7 +101,12 @@ function Payment() {
                       type="tel"
                       className="form-control p-3 rounded-0"
                       id="inputTel"
+                      name="cardNumber"
+                      value={paymentData.cardNumber}
+                      onChange={handleChange}
+                      aria-label="tel"
                       placeholder="Enter Card Number"
+                      required
                     />
                     <div className="payment-icon">
                       {" "}
@@ -83,7 +122,11 @@ function Payment() {
                         type="text"
                         className="form-control p-3 rounded-0"
                         placeholder="MM/YY"
+                        name="expiryDate"
+                        value={paymentData.expiryDate}
+                        onChange={handleChange}
                         aria-label="text"
+                        required
                       />
                     </div>
                     <div className="col-6 my-3">
@@ -94,7 +137,11 @@ function Payment() {
                         type="tel"
                         className="form-control p-3 rounded-0"
                         placeholder="Enter CVV"
+                        name="cvv"
+                        value={paymentData.cvv}
+                        onChange={handleChange}
                         aria-label="tel"
+                        required
                       />
                     </div>
                     <div className="col-12 my-3">
@@ -105,7 +152,11 @@ function Payment() {
                         type="tel"
                         className="form-control p-3 rounded-0"
                         id="inputTel"
+                        name="cardName"
+                        value={paymentData.cardName}
+                        onChange={handleChange}
                         placeholder="Enter name as on card"
+                        required
                       />
                     </div>
                     <div className="col-12 mb-4 mt-2">

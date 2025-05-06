@@ -5,6 +5,7 @@ import { MembershipDetailsData } from "../dummy/MembershipDetailsDummyData";
 function MembershipDetails() {
   const navigate = useNavigate();  
 const [membershipData, setMembershipData] = useState({});
+console.log(membershipData);
   const [showBox, setShowBox] = useState(false);
   function handleClick(e, id) {
     e.preventDefault();
@@ -108,7 +109,7 @@ const [membershipData, setMembershipData] = useState({});
             <button
               type="button"
               className="btn membershipDetails-btn px-4 py-2 ms-2 rounded-0 btn-lg"
-              onClick={() => navigate("/personalDetails")}>
+              onClick={() => navigate("/personalDetails", {state: { membershipData } })}>
               Continue
             </button>
           </div>
