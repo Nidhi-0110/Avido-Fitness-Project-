@@ -5,9 +5,9 @@ import { postPaymentData } from "../server";
 
 function Payment() {
   const navigate = useNavigate();
-  const location = useLocation(); 
-  const { membershipData } = location.state || {} // Destructure membershipData from location.state
-  const membershipPrice = membershipData?.price 
+  const location = useLocation();
+  const { membershipData } = location.state || {}; // Destructure membershipData from location.state
+  const membershipPrice = membershipData?.price;
 
   const [paymentData, setPaymentData] = useState({
     cardNumber: "",
@@ -25,8 +25,8 @@ function Payment() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log(paymentData);
     await postPaymentData(paymentData);
+    console.log(paymentData);
     setPaymentData({
       cardNumber: "",
       expiryDate: "",
@@ -35,7 +35,6 @@ function Payment() {
     });
     alert("Your payment is successful");
   }
-
 
   return (
     <>
@@ -102,10 +101,10 @@ function Payment() {
                       className="form-control p-3 rounded-0"
                       id="inputTel"
                       name="cardNumber"
-                      value={paymentData.cardNumber}
-                      onChange={handleChange}
                       aria-label="tel"
                       placeholder="Enter Card Number"
+                      value={paymentData.cardNumber}
+                      onChange={handleChange}
                       required
                     />
                     <div className="payment-icon">
@@ -123,9 +122,9 @@ function Payment() {
                         className="form-control p-3 rounded-0"
                         placeholder="MM/YY"
                         name="expiryDate"
+                        aria-label="text"
                         value={paymentData.expiryDate}
                         onChange={handleChange}
-                        aria-label="text"
                         required
                       />
                     </div>
@@ -138,9 +137,9 @@ function Payment() {
                         className="form-control p-3 rounded-0"
                         placeholder="Enter CVV"
                         name="cvv"
+                        aria-label="tel"
                         value={paymentData.cvv}
                         onChange={handleChange}
-                        aria-label="tel"
                         required
                       />
                     </div>
@@ -153,9 +152,9 @@ function Payment() {
                         className="form-control p-3 rounded-0"
                         id="inputTel"
                         name="cardName"
+                        placeholder="Enter name as on card"
                         value={paymentData.cardName}
                         onChange={handleChange}
-                        placeholder="Enter name as on card"
                         required
                       />
                     </div>
@@ -163,7 +162,7 @@ function Payment() {
                       <button
                         type="button"
                         className="btn payment-btn py-3 rounded-0 btn-lg"
-                        onClick={() => navigate("/paymentSuccessful")}>
+                         onClick={() => navigate("/paymentSuccessful")}>
                         Processed
                       </button>
                     </div>
